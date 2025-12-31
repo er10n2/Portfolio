@@ -247,6 +247,11 @@ body {
   cursor: pointer;
 }
 
+.gitB a {
+  text-decoration: none;
+  color: #f4f7f4;
+}
+
 .h {
   width: 30px;
   background-color: #f48833;
@@ -541,6 +546,56 @@ p {
 .x-icon:hover {
   background-color: #2f3843;
 }
+
+
+
+
+
+.footer-container {
+    background-color: #1a1f26; /* Slightly darker than your main background */
+    color: #c8cbcc;
+    padding: 40px 20px;
+    border-top: 1px solid #353d47;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-socials a, .footer-links a {
+    color: #f48833; /* Your accent orange */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover, .footer-links a:hover {
+    color: #f4f7f4;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
 @media screen and (max-width: 797px) {
   .btn {
     min-height: fit-content;

@@ -189,6 +189,11 @@ body{
 
 }
 
+.btn a{
+    text-decoration: none;
+    color:#f0ebde;
+}
+
 .btn:hover{
     background-color: #e67300;
 }
@@ -611,7 +616,7 @@ label{
 
     .btn{
         min-height: fit-content;
-        background-color: red;
+       
        
        
     }
@@ -626,8 +631,8 @@ label{
     }
     
     .top-header-div {
-        flex-direction: column; /* Stack them vertically */
-        gap: 40px; /* Smaller gap */
+        flex-direction: column; 
+        gap: 40px; 
         width: 100%;
         text-align: center;
         

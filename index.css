@@ -548,6 +548,132 @@ p {
 }
 
 
+/* Working on project style */
+
+
+.featured-project-container {
+    width: 90%;
+    margin: 0 auto 100px auto; /* 100px bottom margin to separate from projects */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-title {
+    color: #f48833;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.featured-card {
+    background-color: #2f3843;
+    border: 2px solid #f48833; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.featured-img-div {
+    flex: 1.2; 
+    min-height: 300px;
+}
+
+.featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-text-div {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: #f0ebde;
+}
+
+.status-badge {
+    background-color: #222933;
+    color: #58aebd;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    width: fit-content;
+    border: 1px solid #58aebd;
+}
+
+.featured-btn {
+    background-color: #f48833 !important;
+    height: 45px !important;
+}
+
+
+
+
+
+
+
+
+.projects-title-container {
+    width: 90%;
+    margin: 70px auto 70px auto; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projects-main-title {
+    color: #f4f7f4;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    
+    border-left: 5px solid #f48833;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 797px) {
+    .projects-title-container {
+        justify-content: center;
+    }
+    .projects-main-title {
+        font-size: 2rem;
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+/* RESPONSIVE: Stack on Mobile */
+@media screen and (max-width: 797px) {
+    .featured-card {
+        flex-direction: column;
+    }
+    
+    .featured-text-div {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

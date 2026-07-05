@@ -3,582 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio | Full-Stack Developer</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
-    <div class="navbar-container">
-        <div class="nav-items">
-
-
-             <ul class="sideBar">
-                              <li  onClick="hideSideBar()"> 
-    <svg  class="x-icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-  </li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about"  >About</a></li>
-                
-            </ul>
-
-            <ul class="navabarItems" >
-                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                 <li class="hideOnMobile"><a href="#about" >About</a></li>
-                 <li class="logo">  <img src="rocket.svg" alt="icon" class="navbar-icon"></li>
-                   <li class="menu-button" onClick="showSideBar()">  <a href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-    </svg>
-  </a></li>
-            </ul>
-
+    <nav class="site-nav">
+        <div class="nav-brand">Er10n2</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
         </div>
-
-    </div>
-
-
-    <div class="header-container">
+    </nav>
 
 
-        <div class="top-header-div">
+    <main class="portfolio-canvas">
 
-
-        <div class="left-div-header">
-
-        <div class="myName-div">
-
-            <h1>Hi, I'm Er10n2</h1>
-            <p>Aspiring Full-Stack Developer</p>
-
-
-        </div>
-
-        <div class="btn-div">
-
-            <button class="btn"><a href="#projects">Explore My Work</a></button>
-
-            <p>
-                
-                 I focus on frontend and backend basics and keep improving with each project.
-            </p>
-
-
-        </div>
-
-      </div>
-
-
-
-
-      <div class="right-div">
-
-        <img src="computer.svg" alt="header-image" class="imgHeader">
-
-
-      </div>
-
-      </div>
-
-
-
-      <div class="about-div" id="about">
-
-        <div class="about-img-div">
-
-        <img src="avatar.png" alt="about-image" class="about-img">
-
-
-        </div>
-
-        <div class="about-text-div">
-
-         <div class="about-text">
-            <h2>Er10n2</h2>
-
-            <div class="about-lorem-text">
-
-           <p>Computer Science graduate and web developer. <br>
-                I use HTML, CSS, and JavaScript to build websites,<br>
-                 and I'm currently leveling up my skills with Node.js.</p>
-
+  
+        <header class="hero-section">
+            <div class="hero-title-group">
+                <h1>FULL-STACK<br><span class="outline-text">DEVELOPER</span></h1>
             </div>
+            <div class="hero-statement">
+                <p>Building functional web applications, focusing on clean frontend layouts and structured server architecture.</p>
+                <a href="#projects" class="action-link">Selected Work &darr;</a>
+            </div>
+        </header>
 
-         </div>
-
-            <div class="someCard">
-
-                <div class="someCard-inner">
-
-                <div class="someCard-img-div">
-                <img src="avatar.png">
+     
+        <section id="about" class="about-section">
+            <div class="section-title-wrapper">
+                <h2>About</h2>
+            </div>
+            <div class="about-content">
+                <p class="lead-text">Computer Science graduate focusing on database-driven web applications. Building responsive user interfaces and developing server-side logic using Node.js and PostgreSQL.</p>
+                
+                
+                <div class="skills-list">
+                    <span>HTML</span> &middot; <span>CSS</span> &middot; <span>JavaScript</span> &middot; <span>Node.js(Express.js)</span> &middot; <span>PostgreSQL</span>
                 </div>
 
-                <div class="someCard-text-div">
-                <h4>Currently Learning: <span>Node.js</span></h4>
-                <p>Learning Node.js to understand how data moves between the server and the site.</p>
-               </div>
-
-               
-               </div>
+                <div class="contact-details">
+                    <p>GitHub // <a href="https://github.com/er10n2" target="_blank">github.com/er10n2</a></p>
+                    <p>Email // <a href="mailto:er10n2@proton.me">er10n2@proton.me</a></p>
+                </div>
             </div>
-        </div>
+        </section>
 
-
-
-        <div class="aboutcontact-div">
-              <div class="contact-div">
-
-
-            <h3 class="getInTouch">Get In Touch</h3>
-
-            <div class="info">
-
-            <label>Email</label>
-            <input type="text" readonly value="er10n2@proton.me" class="email">
-
-                 <label>GitHub Link</label>
-            <input type="text" readonly value="https://github.com/er10n2" class="email">
-
+       
+        <section id="projects" class="projects-stream">
+            <div class="section-title-wrapper">
+                <h2>Selected Projects</h2>
             </div>
 
-            
 
-        </div>
-
-        </div>
-
-
-      </div>
-
-
-
-       </div>
-
-
-<div class="featured-project-container">
-    <h2 class="section-title">Currently Working On</h2>
-    
-    <div class="featured-card">
-        <div class="featured-img-div">
-            <img src="Elearn.png" alt="E-Learn Platform" class="featured-img">
-        </div>
-        
-        <div class="featured-text-div">
-            <h2>ELearn: Full-Stack LMS</h2>
-            <p>
-                I am building an education site using <strong>Node.js</strong> and <strong>PostgreSQL</strong>. 
-                The database is set up to handle two types of users: 
-                <strong>Professors</strong> who can create and post courses, and 
-                <strong>Students</strong> who can browse them.
-            </p>
-            <div class="status-badge">Phase: Local Development</div>
-            <a href="https://github.com/er10n2/Elearn" target="_blank" class="view-btn featured-btn">
-                View Source Code
-            </a>
-        </div>
-    </div>
-</div>
-
-
-<div class="projects-title-container">
-    <h2 class="projects-main-title">Finished Projects</h2>
-</div>
-
-
-      <div class="bottom-header-div">
-
-        <div class="my-work-div">
-            
-
-            <div class="languages" id="skills">
-                <ul>
-                    <li>
-                        <img class="h"src="html.png" class="i">
-                        <p>HTML</p>
-                    </li>
-                     <li>
-                        <img src="technology.png" class="h">
-                        <p>CSS</p>
-                    </li>
-                     <li>
-                        <img src="js.png" class="h">
-                        <p>JS</p>
-                    </li>
-                     <li>
-                        <img src="ex.png" class="h">
-                        <p>EXJ</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="gitBtn">
-
-                <button class="gitB"><a href="https://github.com/er10n2" target="_blank">Github</a></button>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="projects-show-div project1">
-        <div class="project1-img-div">
-            <img src="rick.png" class="ecommerceImg">
-        </div>
-
-        <div class="project1-text-div">
-            <h2>DimensionDex: Rick and Morty Tracker</h2>
-            <p>
-                An interdimensional character directory built with Node.js and Express. 
-                Features include real-time data fetching via Axios from the Rick and Morty API, 
-                dynamic status filtering.
-            </p>
-            <a href="https://lootlog.onrender.com" target="_blank" class="view-btn">
-                View
-            </a>
-        </div>
-    </div>
-
-        <div class="projects-show-div project1" id="projects">
-
-
-            <div class="project1-img-div">
-            <img src="blogWebApp.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Dynamic Blog Platform</h2>
-                <p>
-                   Built with Node.js, Express, and EJS.
-                    Features include full CRUD capabilities (Create, Read, Update, Delete),
-                     unique post ID generation with UUID, and session-based flash notifications 
-                     for successful data operations.
-
-                </p>
-                <a href="https://blog-webapp-6g8b.onrender.com/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-  
-        </div>
-
-
-        <div class="projects-show-div project1" id="projects">
-
-
-            <div class="project1-img-div">
-            <img src="ecommerce.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>E-Commerce Website</h2>
-                <p>
-                    Built with HTML, CSS, and JavaScript. 
-                    Login and Signup functionality are included.
-                    localStorage is used to store user data.
-
-                </p>
-                <a href="https://er10n2.github.io/Ecommerce/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-  
-        </div>
-
-        <div class="projects-show-div project1">
-
-             <div class="project1-img-div">
-            <img src="s.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Simon Game</h2>
-                <p>
-
-                   Follow the correct sequence to win the game.
-                </p>
-
-                  <a href="https://er10n2.github.io/SimonGame/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
+               <article class="project-item layout-flagship">
+                <div class="project-meta">
+                    <span class="project-category">Full-Stack Application</span>
+                    <h3>Cineverse: Movie discovery web app</h3>
+                    <p>A movie discovery web app built with Express, and EJS, featuring a stylish interface for browsing, searching movie details.
+                    <a href="https://github.com/er10n2/CineVerse" target="_blank" class="project-link">View Source Code &rarr;</a>
+                </div>
+                <div class="project-image">
+                    <img src="Cineverse.png" alt="Cineverse Movie Discovery Platform">
+                </div>
+            </article>
          
+            <article class="project-item layout-flagship">
+                <div class="project-meta">
+                    <span class="project-category">Full-Stack Application</span>
+                    <h3>ELearn: Learning Management System</h3>
+                    <p>A full-stack educational web application built with Node.js, Express, and PostgreSQL. The database is set up to handle two types of users: 
+                <strong>Professors</strong> who can create and post courses, and 
+                <strong>Students</strong> who can enroll in them.</p>
+                    <a href="https://github.com/er10n2/Elearn" target="_blank" class="project-link">View Source Code &rarr;</a>
+                </div>
+                <div class="project-image">
+                    <img src="Elearn.png" alt="ELearn LMS Platform">
+                </div>
+            </article>
 
-        </div>
+       
+            <article class="project-item layout-right">
+                <div class="project-image">
+                    <img src="rick.png" alt="DimensionDex Character Tracker">
+                </div>
+                <div class="project-meta">
+                    <span class="project-category">Web Application</span>
+                    <h3>DimensionDex: Rick & Morty Tracker</h3>
+                    <p>A web application built using the Express framework that interacts with the Rick and Morty API via Axios to pull and display real-time character information.</p>
+                    <a href="https://lootlog.onrender.com" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+            </article>
 
+      
+            <article class="project-item layout-left">
+                <div class="project-meta">
+                    <span class="project-category">Web Application</span>
+                    <h3>Dynamic Blog Platform</h3>
+                    <p>A complete blogging web application implementing full CRUD data operations. Built with Express and EJS.</p>
+                    <a href="https://blog-webapp-6g8b.onrender.com/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="blogWebApp.png" alt="Dynamic Blog Platform">
+                </div>
+            </article>
 
-           <div class="projects-show-div project1">
+            <article class="project-item layout-center">
+                <div class="project-image">
+                    <img src="ecommerce.png" alt="E-Commerce Interface">
+                </div>
+                <div class="project-meta">
+                    <span class="project-category">Frontend Project</span>
+                    <h3>E-Commerce Interface</h3>
+                    <p>Built with HTML, CSS, and JavaScript. Login and Signup functionality are included. localStorage is used to store user data.</p>
+                    <a href="https://er10n2.github.io/Ecommerce/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+            </article>
 
+           
+            <article class="project-item layout-right">
+                <div class="project-meta">
+                    <span class="project-category">JavaScript Game</span>
+                    <h3>Simon Memory Game</h3>
+                    <p>Follow the correct sequence to win the game.</p>
+                    <a href="https://er10n2.github.io/SimonGame/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="s.png" alt="Simon Game Logic">
+                </div>
+            </article>
 
-            <div class="project1-img-div">
-            <img src="password.png" class="ecommerceImg">
-            </div>
+           
+            <article class="project-item layout-left">
+                <div class="project-image">
+                    <img src="password.png" alt="Password Generator">
+                </div>
+                <div class="project-meta">
+                    <span class="project-category">Utility Tool</span>
+                    <h3>Custom Password Generator</h3>
+                    <p>Generate random passwords based on desired length.</p>
+                    <a href="https://er10n2.github.io/Password-Generator/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+            </article>
 
-            <div class="project1-text-div">
-                <h2>Random Password Generator</h2>
-                <p>
-                    Generate random passwords based on desired length.
-                </p>
-                  <a href="https://er10n2.github.io/Password-Generator/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
+          
+            <article class="project-item layout-flagship">
+                <div class="project-meta">
+                    <span class="project-category">Utility Tool</span>
+                    <h3>Metric Conversion UI</h3>
+                    <p>Convert units of Length, Volume, and Mass.</p>
+                    <a href="https://er10n2.github.io/Unit-Conversion/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="unitC.png" alt="Metric Converter Terminal">
+                </div>
+            </article>
 
-
-
-
-
-        </div>
-
-        
+            
      
 
+          
+            <article class="project-item layout-left">
+                <div class="project-meta">
+                    <span class="project-category">JavaScript Interaction</span>
+                    <h3>Acoustic Percussion Kit</h3>
+                    <p>Play Sounds by Clicking or Pressing Keys.</p>
+                    <a href="https://er10n2.github.io/Drum-Kit/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="drum.png" alt="Audio Frequency Array">
+                </div>
+            </article>
+
+            <article class="project-item layout-right">
+                <div class="project-image">
+                    <img src="basketball.png" alt="Score Analytics System">
+                </div>
+                <div class="project-meta">
+                    <span class="project-category">Utility Application</span>
+                    <h3>Basketball score board</h3>
+                    <p>A project built with Html, Css and JavaScript that simulates a basketball score board.</p>
+                    <a href="https://er10n2.github.io/Basketball-score-Board/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+            </article>
+
+         
+            <article class="project-item layout-center">
+                <div class="project-meta">
+                    <span class="project-category">JavaScript Application</span>
+                    <h3>Roll Dice</h3>
+                    <p>A dice rolling simulator built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://er10n2.github.io/Dice/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="roll.png" alt="Probability Simulator">
+                </div>
+            </article>
+
+            
         
-        <div class="projects-show-div project1">
 
+           
+            <article class="project-item layout-right">
+                <div class="project-meta">
+                    <span class="project-category">CSS</span>
+                    <h3>Mondrian Canvas Layout</h3>
+                    <p>A project built with Html and Css inspired by the famous artist Piet Mondrian.</p>
+                    <a href="https://er10n2.github.io/Mondrian-ProjectGrid/" target="_blank" class="project-link">Live Project ↗</a>
+                </div>
+                <div class="project-image">
+                    <img src="mmmm.png" alt="Mondrian Canvas Layout">
+                </div>
+            </article>
 
-            <div class="project1-img-div">
-            <img src="unitC.png" class="ecommerceImg">
-            </div>
+        </section>
+    </main>
 
-            <div class="project1-text-div">
-                <h2>Unit Conversion</h2>
-                <p>
-                   
-                    Convert units of Length, Volume, and Mass.
-                </p>
-                  <a href="https://er10n2.github.io/Unit-Conversion/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-        </div>
-
-
-
-
-        <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="sea.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Into The Sea</h2>
-                <p>
-                    Built with Html, Css and JavaScript. A simple website about the sea.
-                    Register and login functionality is included.
-                </p>
-                  <a href="https://er10n2.github.io/into-the-sea/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-        </div>
-
-
-
-
-           <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="drum.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Drum Kit</h2>
-                <p>
-                    
-                    Play Sounds by Clicking or Pressing Keys.
-                </p>
-                  <a href="https://er10n2.github.io/Drum-Kit/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-        </div>
     
+    <footer class="site-footer">
+        <p>&copy; 2026 Er10n2. All rights reserved.</p>
+        <a href="#" class="top-link">Back to top &uarr;</a>
+    </footer>
 
-
-
-      
-
-         <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="basketball.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Basketball score board</h2>
-                <p>
-                    A project built with Html, Css and JavaScript that simulates a basketball score board. 
-
-                </p>
-                  <a href="https://er10n2.github.io/Basketball-score-Board/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-        </div>
-
-
-
-           <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="roll.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Roll Dice</h2>
-                <p>
-                    A dice rolling simulator built with HTML, CSS, and JavaScript.
-                </p>
-                  <a href="https://er10n2.github.io/Dice/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-        </div>
-        
-        
-
-        <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="{70235B5F-8164-4BBC-B5C1-796C87125E29}.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Game Card</h2>
-                <p>
-                    Html and css project displaying a list of games.
-                </p>
-                  <a href="https://er10n2.github.io/list-of-games/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-     <div class="projects-show-div project1">
-
-
-            <div class="project1-img-div">
-            <img src="mmmm.png" class="ecommerceImg">
-            </div>
-
-            <div class="project1-text-div">
-                <h2>Mondrian project</h2>
-                <p>
-                    A project built with Html and Css inspired by the famous artist Piet Mondrian.
-
-                </p>
-                  <a href="https://er10n2.github.io/Mondrian-ProjectGrid/" target="_blank" class="view-btn">
-                    
-                    View
-                
-                </a>
-            </div>
-
-
-
-
-
-    </div>
-
-        
-      
-
-      </div>
-
-
-      <footer class="footer-container">
-    <div class="footer-content">
-      <p>&copy; <span id="year"></span> Er10n2</p>
-        <div class="footer-socials">
-            <a href="https://github.com/er10n2" target="_blank">GitHub</a>
-        </div>
-        <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </div>
-</footer>
-
-
-
-
-   
-
-
-
-
-
-
-
-    <script src="index.js"></script>
 </body>
 </html>

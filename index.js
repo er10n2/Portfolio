@@ -22,6 +22,71 @@ function hideSideBar(){
 
 }
 
+
+
+
+// ---------- Concepts & Designs ----------
+// "tag" and "link" are optional. No link = the card is not clickable.
+const concepts = [
+  {
+    tag: "Landing Page",
+    title: "Shoes Hero Section",
+    img: "./images/shoes.png",
+    alt: "shoes hero concept",
+    link: "https://er10n2.github.io/ShoesWebsite/"
+  },
+   {
+    tag: "Landing Page",
+    title: "Furniture Hero section",
+    img: "./images/Furniture.png",
+    alt: "furniture hero concept",
+    link: "https://er10n2.github.io/FurnitureWebsite"
+  }
+  ,
+   {
+    tag: "Landing Page",
+    title: "Cars Hero section",
+    img: "./images/car.png",
+    alt: "cars hero concept",
+    link: "https://er10n2.github.io/CarsWebsite/"
+  }
+
+  ,
+   {
+    tag: "Landing Page",
+    title: "Nutritionist Hero section",
+    img: "./images/nutritionist.png",
+    alt: "nutritionist hero concept",
+    link: "https://er10n2.github.io/NutritionistWebsite/"
+  }
+  
+];
+
+function conceptCard(c) {
+  const tag = c.tag ? `<span class="concept-tag">${c.tag}</span>` : "";
+  const inner = `
+    <div class="concept-image"><img src="${c.img}" alt="${c.alt || c.title}" loading="lazy"></div>
+    <div class="concept-info">
+      <h3>${c.title}</h3>
+      ${tag}
+    </div>`;
+  return c.link
+    ? `<a class="concept-item" href="${c.link}" target="_blank" rel="noopener noreferrer">${inner}</a>`
+    : `<div class="concept-item">${inner}</div>`;
+}
+
+document.getElementById("concepts-grid").innerHTML = concepts.map(conceptCard).join("");
+
+
+
+
+
+
+
+
+
+
+
 const projects = [
     { class: "layout-flagship", category: "Web Application", title: "Cake Studio", desc: "A cake studio website where visitors can explore different cakes and desserts, discover sweet combinations, and order custom designs for special occasions", link: "https://cake-studiodemo.netlify.app/", linkText: "Visit Website &rarr;", img: "./images/cake.png", alt: "cake studio  Discovery website", imgFirst: false },
         { class: "layout-flagship", category: "Web Application", title: "Flower Studio", desc: "A flower studio website where visitors can explore different flower collections, discover unique bouquets, and find the perfect flowers for any occasion.", link: "https://flower-studiodemo.netlify.app/", linkText: "Visit Website &rarr;", img: "./images/flower.png", alt: "flower studio  Discovery website", imgFirst: false },

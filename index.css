@@ -379,3 +379,100 @@ body {
         transform: none;
     }
 }
+
+
+
+
+
+/* ===== Concepts & Designs ===== */
+.concepts-section {
+    padding-bottom: 110px;
+}
+
+.concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.concept-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 6px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    color: var(--text-main);
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+a.concept-item:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-3px);
+}
+
+.concept-image {
+    width: 100%;
+    overflow: hidden;
+    background: #0d0d0f;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    aspect-ratio: 16 / 10;
+}
+
+.concept-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+a.concept-item:hover .concept-image img {
+    transform: scale(1.03);
+}
+
+.concept-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px 8px;
+}
+
+.concept-info h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.concept-tag {
+    flex-shrink: 0;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1px 9px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .concepts-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .concepts-section { padding-bottom: 70px; }
+    .concepts-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    a.concept-item:hover { transform: none; }
+}
+
+@media (max-width: 480px) {
+    .concepts-grid { grid-template-columns: 1fr; }
+}
